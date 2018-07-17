@@ -3,8 +3,6 @@ package core.controller;
 import core.model.Model;
 import core.view.View;
 
-import java.util.Locale;
-import java.util.ResourceBundle;
 import java.util.regex.*;
 
 import java.util.Scanner;
@@ -33,9 +31,13 @@ public class Controller {
 
         selectLanguage();
 
+        view.printMessage("HELLO_MESSAGE");
+        view.printMessage("REQUEST_NAME");
 
 
-view.Message();
+
+
+
 
 
     }
@@ -46,10 +48,10 @@ view.Message();
               if (pattern.matcher(temp).find()) {
 
                   if (temp.equals("u")||temp.equals("U")){
-                      view.setLanguage("ukr");
+                      view.saveLanguage("ukr");
                   }
                   else if (temp.equals("e")||temp.equals("E")){
-                      view.setLanguage("eng");
+                      view.saveLanguage("eng");
                   }
                   else selectLanguage();
               } else {
