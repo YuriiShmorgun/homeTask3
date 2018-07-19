@@ -34,6 +34,9 @@ public class Controller {
         view.printMessage("HELLO_MESSAGE");
         view.printMessage("REQUEST_NAME");
 
+        Pattern patternEmail = Pattern.compile("\\w+([\\.-]?\\w+)*@\\w+([\\.-]?\\w+)*\\.\\w{2,4}");
+
+
 
 
 

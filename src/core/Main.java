@@ -19,6 +19,8 @@ public class Main {
         Controller controller = new Controller();
         controller.start();
 
+
+        /*Throwable*/
     }
 
 }
